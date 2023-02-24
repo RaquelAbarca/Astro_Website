@@ -1,7 +1,81 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Home Page";
+const pageTitle = "Welcome to my personal website";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+            <p class="meImg">
+                <a href="https://github.com/RaquelAbarca" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/110420288?v=4"  alt="personal photo" width="400px">
+                </a>
+            </p>
+            <h1>Raquel Sofía Abarca Espinoza</h1>
+            <h2>Software Engineer   •   Graphic Designer   •   Young Life Volunteer</h2>
+            <hr>
+            <p class="summary">I am a Student Developer in DataGrove, with experience in Dart, HTML, CSS, Java, React and other languajes. Student of the Universidad Hispanoamericana. I really enjoy programming challenges, they drive me to learn more and discover a way to solve them.</p>
+            <section>
+                <h2>Experience</h2>
+                <hr>
+                <table id="experience" align="center">
+                    <tr>
+                        <td>
+                            <p class="datagrove">
+                                <a href="https://datagrovecr.com/" target="_blank">
+                                    <img src="https://datagrovecr.com/bright_green_circle.png"  alt="Datagrove" width="200px">
+                                </a>
+                            </p>
+                        </td>
+                        <td>
+                            <p class="datagrove">
+                                <a href="https://www.worldvision.cr/" target="_blank">
+                                    <img src="https://scontent.fsjo9-1.fna.fbcdn.net/v/t1.6435-9/29067093_1035501713254193_9207030983373619200_n.png?stp=dst-png&_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tyIFnQjNNS4AX_XXmzz&tn=4kPut_2PVI3OfcTP&_nc_ht=scontent.fsjo9-1.fna&oh=00_AfBoQllPWRw1MOrCUkMcdOUM8LdkotTM9NEfGmrSLQFDRg&oe=6415CA0A"  alt="Datagrove" width="200px">
+                                </a>
+                            </p>
+                        </td>
+                        <td>
+                            <p class="datagrove">
+                                <a href="https://www.mep.go.cr/" target="_blank">
+                                    <img src="https://scontent.fsjo9-1.fna.fbcdn.net/v/t39.30808-6/327804161_720179606480435_1035719268544011927_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=kfc9qw6mf_UAX9R53jk&_nc_ht=scontent.fsjo9-1.fna&oh=00_AfAsZl3U94u__6cb_eTEthC4m7U7_7trmhDjLnY2kjepGA&oe=63F2BD34"  alt="Datagrove" width="200px">
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Datagrove</p>
+                        </td>
+                        <td>
+                            <p>World Vision</p>
+                        </td>
+                        <td>
+                            <p>M.E.P.</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li><b>Universidad Hispanoamericana</b> | 2022 - Present</li>
+                    <li><b>Colegio Tecnico Profesional CIT</b> | 2019 - 2021</li>
+                </ul>
+            </section>
+            <section>
+                <table border="1" align="center">
+                    <tr>
+                        <th colspan="4">Skills</th>
+                    </tr>
+                    <tr>
+                        <td align="center">C#</td>
+                        <td align="center">HTML</td>
+                        <td align="center">CSS</td>
+                        <td align="center">Vitepress</td>
+                    </tr>
+                    <tr>
+                        <td>I have a Intermediate C# Sololearn degree</td>
+                        <td>With experience in webdesing</td>
+                        <td>Also with a experience</td>
+                        <td>I have a good proyect using it</td>
+                    </tr>
+                </table>
+            </section>
 </BaseLayout>
