@@ -4,6 +4,10 @@ html {
     height: 100%;
 	overflow-x: hidden;
 }
+
+header{
+    background-color: #ede8f5;
+}
   
 body {
     margin: 0 auto;
@@ -11,6 +15,19 @@ body {
     max-width: 90%;
     padding: 1rem;
     line-height: 1.5;
+}
+
+.summaryTable{
+    border: px solid #ffffff;
+}
+
+#about_me{
+    padding-left: 20px;
+}
+
+.meImg img{
+    float: initial;
+    border-radius: 50%;
 }
 
 a {
@@ -26,6 +43,9 @@ h1 {
     font-size: 2.5rem;
 }
 
+table {
+    padding-right: 50px;
+}
 /* nav styles */
 .hamburger {
     padding-right: 20px;
@@ -42,32 +62,26 @@ h1 {
 
 .nav-links {
     width: 100%;
-    top: 5rem;
-    left: 48px;
-    background-color: #ff9776;
-    display: none;
-    margin: 0;
+    background-color: #f8f9ff;
 }
   
 .nav-links a {
     display: block;
     text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
 }
   
 .nav-links a:hover, a:focus {
-    background-color: #ff9776;
+    background-color: #ffeee9;
 }
   
 .expanded {
     display: unset;
 }
   
-/* @media screen and (min-width: 636px) {
+@media screen and (min-width: 636px) {
     .nav-links {
       margin-left: 5em;
       display: block;
@@ -84,4 +98,4 @@ h1 {
     .hamburger {
         display: none;
     } 
-}*/
+}
