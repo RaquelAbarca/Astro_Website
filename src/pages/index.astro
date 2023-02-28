@@ -3,25 +3,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Welcome to my personal website";
 ---
 <BaseLayout pageTitle={pageTitle}>
-            <table class="summaryTable">
-              <tr>
-                <td>
-                  <p class="meImg">
-                    <a href="https://github.com/RaquelAbarca" target="_blank">
-                        <img src="https://avatars.githubusercontent.com/u/110420288?v=4"  alt="personal photo" width="800px">
-                    </a>
-                  </p>
-                </td>
-                <td id="about_me">
-                  <h1>Raquel Sofía Abarca Espinoza</h1>
+    <div class="flex-container">
+        <div class="flexboximage">
+            <p class="meImg">
+                <a href="https://github.com/RaquelAbarca" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/110420288?v=4"  alt="personal photo" width="400px">
+                </a>
+              </p>
+        </div>
+        <div class="flexboxsummary">
+            <h1>Raquel Sofía Abarca Espinoza</h1>
                   <h2>Software Engineer   •   Graphic Designer   •   Young Life Volunteer</h2>
                   <hr>
                   <p>I am a Student Developer in DataGrove, with experience in Dart, HTML, CSS, Java, React and other languajes. Student of the Universidad Hispanoamericana. I really enjoy programming challenges, they drive me to learn more and discover a way to solve them.</p>
-                </td>
-              </tr>
-            </table>
-            <section>
-                <h2>Experience</h2>
+        </div>
+    </div>
+    <section>
+            <h2>Experience</h2>
                 <hr>
                 <table id="experience" align="center">
                     <tr>

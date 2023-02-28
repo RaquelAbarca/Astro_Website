@@ -6,23 +6,22 @@ html {
 }
 
 header{
-    background-color: #ede8f5;
+    background-color: hsla(264, 100%, 83%, 0.427);
+    max-width: 100%;
 }
   
 body {
     margin: 0 auto;
     width: 100%;
-    max-width: 90%;
-    padding: 1rem;
+    padding: 3rem;
     line-height: 1.5;
+    background-color: #e5e5f7;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #c8b4fb55, #c8b4fb );
+    /*https://www.magicpattern.design/tools/css-backgrounds*/
 }
 
-.summaryTable{
-    border: px solid #ffffff;
-}
-
-#about_me{
-    padding-left: 20px;
+hr {
+    border-color: #030109;
 }
 
 .meImg img{
@@ -31,16 +30,18 @@ body {
 }
 
 a {
-	color:rgb(230, 64, 106);
-}
-  
-* {
-    box-sizing: border-box;
+	color:rgb(65, 20, 110);
 }
   
 h1 {
     margin: 1rem 0;
-    font-size: 2.5rem;
+    font-size: 4rem;
+    font-family: "Pacifico", sans-serif;
+    color: rgb(0, 6, 86);
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 table {
@@ -57,12 +58,12 @@ table {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #ff9776;
+    background-color: #8b76ff;
 }
 
 .nav-links {
     width: 100%;
-    background-color: #f8f9ff;
+    background-color: #cdb5fa2d;
 }
   
 .nav-links a {
@@ -74,14 +75,39 @@ table {
 }
   
 .nav-links a:hover, a:focus {
-    background-color: #ffeee9;
+    background-color: #d4c1e9;
 }
   
 .expanded {
     display: unset;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  
+.flex-container > div {
+    margin-top: 10px;
+}
+.flexboximage{
+    min-width: 400px;
+    z-index: 1;
+}
+.flexboxsummary{
+    text-align: center;
+    width: 870px;
+    flex-grow: 1;
+    background-color: #ffffffad;
+    padding: 20px;
+    padding-left: 40px;
+    margin-left: -50px;
+}
   
 @media screen and (min-width: 636px) {
+
     .nav-links {
       margin-left: 5em;
       display: block;
@@ -98,4 +124,5 @@ table {
     .hamburger {
         display: none;
     } 
+
 }
